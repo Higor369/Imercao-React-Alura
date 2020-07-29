@@ -1,11 +1,13 @@
 import React from 'react';
 
 
-import Menu from './components/menu/Menu'
-import dadosIniciais from './data/dados_iniciais.json';
-import BannerMain from './components/BannerMain';
-import Carousel from './components/Carousel';
-import Footer from './components/Footer';
+import Menu from '../../components/menu/Menu'
+import dadosIniciais from '../../data/dados_iniciais.json';
+import BannerMain from '../../components/BannerMain';
+import Carousel from '../../components/Carousel';
+import Footer from '../../components/Footer';
+import PageDefault from '../../components/pageDefaut/PageDefault';
+
 
 
 
@@ -13,7 +15,7 @@ import Footer from './components/Footer';
   function App() {
     return (
       <div style={{ background: "#141414" }}>
-        <Menu />
+        <PageDefault >
   
         <BannerMain
           videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
@@ -46,7 +48,7 @@ import Footer from './components/Footer';
           category={dadosIniciais.categorias[5]}
         />      
   
-        <Footer />
+        </PageDefault >
         </div>
       );
     }

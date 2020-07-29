@@ -3,17 +3,19 @@ import React from 'react'
 import logo from '../../assents/imagens/logoHigorFlix.png'
 import "./menu.css"
 
+import {Link} from 'react-router-dom'
+
 import ButtonLink from '../buttonLink/ButtonLink'
 
 const menu = (props) => {
 
     return(
         <nav className="Menu">
-            <a  src="/">
+            <Link  to="/">
              <img src={logo} className="Logo" alt="logo"></img>
-            </a>
+            </Link>
 
-            <ButtonLink className="ButtonLink" href="/">
+            <ButtonLink className="ButtonLink" to="/cadastro/video">
                 Nossos Videos
             </ButtonLink>
         </nav>
