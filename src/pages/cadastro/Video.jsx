@@ -14,9 +14,5 @@ const Video = (props) => {
             </Link>
         </PageDefault>
     )
-
-
-
 }
-
 export default Video;
